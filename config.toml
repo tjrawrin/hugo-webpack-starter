@@ -1,0 +1,11 @@
+# hostname (and path) to the root
+baseURL = "/"
+
+# language
+languageCode = "en_US"
+
+# disable things from being generated
+disableKinds = ["taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT"]
+
+# site title
+title = "Hugo Webpack Starter"
