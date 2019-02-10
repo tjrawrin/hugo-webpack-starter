@@ -18,7 +18,7 @@ module.exports = (env, argv) => {
     output: {
       filename: devMode ? 'js/[name].js' : 'js/[name].[chunkhash:8].js',
       publicPath: '/',
-      path: path.resolve(__dirname, 'static/assets'),
+      path: path.resolve(__dirname, 'static'),
     },
     module: {
       rules: [
@@ -70,7 +70,7 @@ module.exports = (env, argv) => {
         chunkFilename: devMode ? 'css/[id].css' : 'css/[id].[contenthash:8].css',
       }),
       new ManifestPlugin({
-        publicPath: 'assets/',
+        publicPath: '/',
         fileName: path.resolve(__dirname, 'data/manifest.json'),
       })
     ],
